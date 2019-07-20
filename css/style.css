@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,900&display=swap&subset=latin-ext');
+@import url("core.css");
+@import url("blocks/header.css");
+@import url("blocks/slider.css");
+@import url("blocks/about.css");
+@import url("blocks/porfolio.css");
+@import url("blocks/features.css");
+@import url("blocks/clients.css");
+@import url("blocks/teamwork.css");
+@import url("blocks/skills.css");
+@import url("blocks/services.css");
+@import url("blocks/plans.css");
+@import url("blocks/blog.css");
+@import url("blocks/footer.css");
+
+@font-face {
+	font-family: 'MgOpenModataRegular.ttf';
+	src: url('../assets/fonts/MgOpenModataRegular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Myriad.otf';
+	src: url('../assets/fonts/Myriad.otf') format('otf');
+}
+
+

@@ -1,0 +1,185 @@
+.teamwork {
+	padding: 88px 0 110px;
+}
+
+.teamwork-head {
+	text-align: center;
+}
+
+.teamwork-head p:nth-child(2) {
+	font-weight: 700;
+	margin: 35px auto 97px;
+	color: #5C5C5C;
+}
+
+.teamwork-wrap {
+	position: relative;
+}
+
+.teamwork-team {
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.teamwork-team .team-blocks .team-photo:hover::before {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.teamwork-team .team-blocks {
+	text-align: center;
+	-webkit-box-shadow: 0 0 0 1px #E7E7E7;
+	box-shadow: 0 0 0 1px #E7E7E7;
+	padding-bottom: 28px;
+	-ms-flex-preferred-size: 24%;
+	flex-basis: 24%;
+}
+
+.teamwork-team .team-blocks .team-photo {
+	position: relative;
+	width: 100%;
+	font-size: 0;
+}
+
+.teamwork-team .team-blocks .team-photo img {
+	display: block;
+	width: 100%;
+}
+
+.teamwork-team .team-blocks:hover {
+	-webkit-box-shadow: 0 0 0 1px #262626;
+	box-shadow: 0 0 0 1px #262626;
+}
+
+.teamwork-team .team-blocks .team-sub-title {
+	text-transform: uppercase;
+	font-weight: 500;
+	margin: 21px auto 13px;
+}
+
+.teamwork-team .team-blocks .team-sub-title:hover {
+	color: #FF0036;
+}
+
+.teamwork-team .team-blocks .team-photo-social {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	visibility: hidden;
+	width: 156px;
+}
+
+.team-blocks .team-photo-social a {
+	position: relative;
+	display: inline-block;
+	width: 22px;
+	height: 41px;
+	background-color: #fff;
+	background-image: url("../../img/spritesheet.png");
+	background-position: -25px -89px;
+}
+
+.team-blocks .team-photo-social .tt-btn {
+	background-position: -29px -232px;
+}
+
+.team-blocks .team-photo-social .gp-btn {
+	background-position: -26px -137px;
+}
+
+.team-blocks .team-photo-social a:nth-of-type(2) {
+	margin: 0 32px;
+}
+
+.team-blocks .team-photo-social a::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: -12px;
+	border: 20.5px solid #fff;
+	border-right-width: 12px;
+	border-left-width: 0;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+
+.team-blocks .team-photo-social a::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	right: -12px;
+	border: 20.5px solid #fff;
+	border-left-width: 12px;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+
+.teamwork-wrap::before {
+	position: absolute;
+	content: "";
+	height: 1px;
+	width: 515px;
+	background-color: #262626;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	bottom: -110px;
+}
+
+.teamwork-wrap::after {
+	position: absolute;
+	content: "";
+	width: 22px;
+	height: 20px;
+	background-image: url('../../img/spritesheet.png');
+	background-repeat: no-repeat;
+	background-position: -72px 0;
+	bottom: -119px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.teamwork-team .team-photo:hover .team-photo-social {
+	opacity: 1;
+	visibility: visible;
+}
+
+@media (max-width: 768px) {
+	.teamwork {
+		padding: 50px 0;
+	}
+	.teamwork-team {
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.teamwork-team .team-blocks {
+		-ms-flex-preferred-size: 49%;
+		flex-basis: 49%;
+		margin-top: 15px;
+	}
+	.teamwork-head p:nth-child(2) {
+		margin-bottom: 60px;
+	}
+}

@@ -1,0 +1,57 @@
+.slider-slides {
+	position: relative;
+	width: 300%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	transition: all 1s ease;
+}
+
+.slider-inner {
+	overflow-x: hidden;
+}
+
+.slider input {
+	display: none;
+}
+
+/*Левая стрелка*/
+#btn-1:checked ~ .slider-controls .arrows label:nth-child(3),
+#btn-2:checked ~ .slider-controls .arrows label:nth-child(1),
+#btn-3:checked ~ .slider-controls .arrows label:nth-child(2) {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: -130px;
+	width: 22px;
+	height: 41px;
+	background: url(../../img/spritesheet.png) no-repeat -10px -30px;
+	z-index: 1;
+}
+/*Правая стрелка*/
+#btn-1:checked ~ .slider-controls .arrows label:nth-child(2),
+#btn-2:checked ~ .slider-controls .arrows label:nth-child(3),
+#btn-3:checked ~ .slider-controls .arrows label:nth-child(1) {
+	position: absolute;
+	display: block;
+	width: 22px;
+	height: 41px;
+	top: 50%;
+	right: -130px;
+	background: url(../../img/spritesheet.png) no-repeat -10px -30px;
+	z-index: 1;
+	transform: scaleX(-1);
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+	transform: translateX(0);
+}
+#btn-2:checked ~ .slider-inner .slider-slides {
+	transform: translateX(-1030px);
+}
+#btn-3:checked ~ .slider-inner .slider-slides {
+	transform: translateX(-2060px);
+}
